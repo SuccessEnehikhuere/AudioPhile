@@ -1,9 +1,20 @@
 import { useState } from 'react'
+import {  RouterProvider, createBrowserRouter } from 'react-router-dom'
+import {Home} from './pages'
+
+const router = createBrowserRouter([
+ {
+  path: '/',
+  element: <Home/>
+ }
+])
 
 
 
 const App = ()=>{
-  return <h1 className="text-3xl font-bold underline text-black/50">Hello world!</h1>
+  return (
+    <RouterProvider router={router} />
+  )
 }
 
 export default App
