@@ -13,7 +13,7 @@ import { FaSignOutAlt } from 'react-icons/fa'
 
 const SideBar = () => {
   return (
-    <main className="bg-stone-300 h-screen w-[100px] rounded-l-3xl flex flex-col  items-center py-2 justify-between">
+    <main className=" w-[100px] flex flex-col  items-center py-2 justify-between">
       <div>
         <img src={music} className="h-8 w-8 rounded-full" />
       </div>

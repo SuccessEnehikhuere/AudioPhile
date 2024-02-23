@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 function SidebarMenu(props) {
   return (
     <Link to={props.to}>
-      <div className="flex flex-col items-center capitalize ">
+      <div className="flex flex-col items-center capitalize pt-2 ">
         <IconContext.Provider value={{size:'24px'}} >
           {props.icon}
           <p className='py-0'>
