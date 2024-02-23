@@ -19,13 +19,13 @@ const SideBar = () => {
       </div>
       <div>
         <SidebarMenu title="feed" to="/feed" icon={<MdDashboard />} />
-        <SidebarMenu title="trending" to="/feed" icon={<FaGripfire />} />
-        <SidebarMenu title="player" icon={<FaPlay />} />
-        <SidebarMenu title="favourites" icon={<MdFavorite />} />
-        <SidebarMenu title="library" icon={<IoLibrarySharp />} />
+        <SidebarMenu title="trending" to="/trending" icon={<FaGripfire />} />
+        <SidebarMenu title="player" to='/' icon={<FaPlay />} />
+        <SidebarMenu title="favourites" to='favourites' icon={<MdFavorite />} />
+        <SidebarMenu title="library" to='library' icon={<IoLibrarySharp />} />
       </div>
       <div>
-        <SidebarMenu title='signout' to='' icon={< FaSignOutAlt/>}/>
+        <SidebarMenu title='signout' to='/signout' icon={< FaSignOutAlt/>}/>
       </div>
     </main>
   )
