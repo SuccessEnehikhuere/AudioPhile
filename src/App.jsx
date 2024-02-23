@@ -1,11 +1,17 @@
 import { useState } from 'react'
 import {  RouterProvider, createBrowserRouter } from 'react-router-dom'
-import {Home} from './pages'
+import {Home, HomeLayout} from './pages'
 
 const router = createBrowserRouter([
  {
   path: '/',
-  element: <Home/>
+  element: <HomeLayout/>,
+  children: [
+    {
+      index: true,
+      element: <Home/>
+    }
+  ]
  }
 ])
 

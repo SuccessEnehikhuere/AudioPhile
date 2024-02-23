@@ -1,8 +1,13 @@
 import React from 'react'
+import {SideBar} from '../components'
+import { Outlet } from 'react-router-dom'
 
 const HomeLayout = () => {
   return (
-    <div>HomeLayout</div>
+    <main className='flex'>
+     <SideBar/>
+     <Outlet/>
+    </main>
   )
 }
 
